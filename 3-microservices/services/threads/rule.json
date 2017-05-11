@@ -1,0 +1,18 @@
+{
+  "ListenerArn": "placeholder",
+  "Conditions": [
+    {
+      "Field": "path-pattern",
+      "Values": [
+        "/api/threads*"
+      ]
+    }
+  ],
+  "Priority": 2,
+  "Actions": [
+    {
+      "Type": "forward",
+      "TargetGroupArn": "placeholder"
+    }
+  ]
+}

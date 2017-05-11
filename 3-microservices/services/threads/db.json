@@ -1,0 +1,19 @@
+{
+  "threads": [
+    {
+      "id": 1,
+      "title": "What's up with the Lich?",
+      "createdBy": 4
+    },
+    {
+      "id": 2,
+      "title": "Party at the candy kingdom tomorrow",
+      "createdBy": 3
+    },
+    {
+      "id": 3,
+      "title": "In search of a new guitar",
+      "createdBy": 1
+    }
+  ]
+}
