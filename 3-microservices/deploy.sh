@@ -38,7 +38,7 @@ VPCID=${RESULTS_ARRAY[4]}
 
 printf "${PRIMARY}* Authenticating with EC2 Container Repository${NC}\n";
 
-`aws ecr get-login --region $REGION`
+`aws ecr get-login --region $REGION --no-include-email`
 
 # Tag for versioning the container images, currently set to timestamp
 TAG=`date +%s`
