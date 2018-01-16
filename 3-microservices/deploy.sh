@@ -205,4 +205,4 @@ do
 done
 
 printf "${PRIMARY}* Done, application is at: http://${URL}${NC}\n";
-printf "${PRIMARY}* (It may take a minute for the container to register as healthy and begin receiving traffic.)\n";
+printf "${PRIMARY}* (It may take a minute for the container to register as healthy and begin receiving traffic.)${NC}\n";
