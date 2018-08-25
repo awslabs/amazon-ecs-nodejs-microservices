@@ -18,26 +18,11 @@ Parameters:
       c3.2xlarge, c3.4xlarge, c3.8xlarge, r3.large, r3.xlarge, r3.2xlarge, r3.4xlarge,
       r3.8xlarge, i2.xlarge, i2.2xlarge, i2.4xlarge, i2.8xlarge]
     ConstraintDescription: Please choose a valid instance type.
+  ECSAMI:
+    Description: AMI ID
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /aws/service/ecs/optimized-ami/amazon-linux/recommended/image_id
 Mappings:
-  AWSRegionToAMI:
-    us-east-1:
-      AMIID: ami-eca289fb
-    us-east-2:
-      AMIID: ami-446f3521
-    us-west-1:
-      AMIID: ami-9fadf8ff
-    us-west-2:
-      AMIID: ami-7abc111a
-    eu-west-1:
-      AMIID: ami-a1491ad2
-    eu-central-1:
-      AMIID: ami-54f5303b
-    ap-northeast-1:
-      AMIID: ami-9cd57ffd
-    ap-southeast-1:
-      AMIID: ami-a900a3ca
-    ap-southeast-2:
-      AMIID: ami-5781be34
   SubnetConfig:
     VPC:
       CIDR: '10.0.0.0/16'
@@ -170,7 +155,7 @@ Resources:
   ContainerInstances:
     Type: AWS::AutoScaling::LaunchConfiguration
     Properties:
-      ImageId: !FindInMap [AWSRegionToAMI, !Ref 'AWS::Region', AMIID]
+      ImageId: !Ref ECSAMI
       SecurityGroups: [!Ref 'EcsSecurityGroup']
       InstanceType: !Ref 'InstanceType'
       IamInstanceProfile: !Ref 'EC2InstanceProfile'
