@@ -39,7 +39,7 @@ Mappings:
     ap-southeast-2:
       AMIID: ami-5781be34
     ap-northeast-2:
-      AMIID: ami-0060ad36f655af38b
+      AMIID: ami-0b52e57bed048ca48
   SubnetConfig:
     VPC:
       CIDR: '10.0.0.0/16'
