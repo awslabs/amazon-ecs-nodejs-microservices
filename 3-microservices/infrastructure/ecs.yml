@@ -21,25 +21,37 @@ Parameters:
 Mappings:
   AWSRegionToAMI:
     us-east-1:
-      AMIID: ami-eca289fb
+      AMIID: ami-07eb698ce660402d2
     us-east-2:
-      AMIID: ami-446f3521
+      AMIID: ami-0a0c6574ce16ce87a
     us-west-1:
-      AMIID: ami-9fadf8ff
+      AMIID: ami-04c22ba97a0c063c4
     us-west-2:
-      AMIID: ami-7abc111a
+      AMIID: ami-09568291a9d6c804c
     eu-west-1:
-      AMIID: ami-a1491ad2
+      AMIID: ami-066826c6a40879d75
+    eu-west-2:
+      AMIID: ami-0cb31bf24b130a0f9
+    eu-west-3: 
+      AMIID: ami-0a0948de946510ec0
     eu-central-1:
-      AMIID: ami-54f5303b
+      AMIID: ami-0b9fee3a2d0596ed1
     ap-northeast-1:
-      AMIID: ami-9cd57ffd
-    ap-southeast-1:
-      AMIID: ami-a900a3ca
-    ap-southeast-2:
-      AMIID: ami-5781be34
+      AMIID: ami-0edf19001c48838c7
     ap-northeast-2:
-      AMIID: ami-0060ad36f655af38b
+      AMIID: ami-0b52e57bed048ca48
+    ap-southeast-1:
+      AMIID: ami-08d4fe232c67b81b8
+    ap-southeast-2:
+      AMIID: ami-08c26730c8ee004fa
+    ca-central-1:
+      AMIID: ami-055750f063052ec55
+    ap-south-1:
+      AMIID: ami-05f009513cd58ac90
+    sa-east-1:
+      AMIID: ami-0ada25501ac1375b3
+    us-gov-west-1:
+      AMIID: ami-3c39a25d
   SubnetConfig:
     VPC:
       CIDR: '10.0.0.0/16'
