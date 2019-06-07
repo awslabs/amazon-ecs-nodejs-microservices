@@ -15,6 +15,10 @@ router.get('/api/posts/in-thread/:threadId', function *() {
   this.body = db.posts.filter((post) => post.thread == id);
 });
 
+router.get('/api/posts', function *() {
+  this.body = db.posts;
+});
+
 router.get('/api/posts/by-user/:userId', function *() {
   const id = parseInt(this.params.userId);
   this.body = db.posts.filter((post) => post.user == id);

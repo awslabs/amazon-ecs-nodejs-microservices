@@ -28,6 +28,10 @@ router.get('/api/threads/:threadId', function *() {
   this.body = db.threads.find((thread) => thread.id == id);
 });
 
+router.get('/api/posts', function *() {
+  this.body = db.posts;
+});
+
 router.get('/api/posts/in-thread/:threadId', function *() {
   const id = parseInt(this.params.threadId);
   this.body = db.posts.filter((post) => post.thread == id);
